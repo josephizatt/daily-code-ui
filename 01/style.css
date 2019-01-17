@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, p {
+   font-family: 'Helvetica', sans-serif;
+   margin: 0;
+   margin-bottom: 0.8em;
+}
+
+.wrapper {
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2vw;
+    border-radius: 0px 5px 5px 0px;
+    min-width: 30vw;
+    min-height: 60vh;
+}
+
+.container:first-child {
+    border-radius: 5px 0px 0px 5px;
+    max-width: 24vw !important;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: sans-serif;
+    margin-bottom: 0.8em;
+    display: inline-block;
+}
+
+input {
+    font-size: 1em;
+    color: black;
+    border: none;
+    -webkit-appearance: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.6em;
+    max-width: 30%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    border: 1px solid blue;
+    color: blue;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 30%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: blue;
+    color: white;
+    transition: all 0.3s;
+}
+
+::placeholder {
+    color: rgb(82, 82, 82);
+}
+
+textarea {
+    background: blue;
+    color: white;
+    resize: none;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+    min-width: 30vw;
+    min-height: 25vh;
+    font-size: 1em;
+    padding: 2px;
+    border: 1px solid blue;
+    font-family: monospace;
+}
+
+.ta-label {
+    color: blue;
+    font-weight: bold;
+}

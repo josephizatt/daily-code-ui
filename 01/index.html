@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <h1>Daily Coding Problem #01</h1>
+            <p>This problem was recently asked by Google.</p>
+            <p>Given a list of numbers and a number k, return whether any two numbers from the list add up to k.</p>
+            <p>For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.</p>
+            <p>Taken from <a href="https://www.dailycodingproblem.com/">www.dailycodingproblem.com</a></p>
+        </div>
+        <div class="container">
+            
+            <form>
+                <label for="script" class="ta-label">Script</label>
+<textarea id="script">
+let two_sum = function(list, k) {
+    for(var i = 0; i < list.length; i++) {
+        for(var j =0; j < list.length; j++) {
+            if(i != j && list[i] + list[j] === k) {
+                return true;
+                } 
+            }
+        }
+    return false;
+}</textarea>
+                <label for="list">Enter a series of numbers seperated by commas</label>
+                <input id="list" type="text" label="Enter a series of numbers seperated by commas" placeholder="10,15,3,7">
+
+                <label for="k">Enter a value for K</label>
+                <input id="k" type="text" label="Enter a value for K" placeholder="17">
+
+                <button type="submit">Run</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
